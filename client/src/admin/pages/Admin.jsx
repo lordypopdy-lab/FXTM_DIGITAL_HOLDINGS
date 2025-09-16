@@ -49,7 +49,7 @@ const Admin = () => {
         const Admin = JSON.parse(localStorage.getItem("admin"));
         const email = Admin.email;
 
-        if(email !== "examplelordy@gmail.com") {
+        if(email !== "example@gmail.com") {
             localStorage.removeItem("admin");
             location.href = "/login"
         }
