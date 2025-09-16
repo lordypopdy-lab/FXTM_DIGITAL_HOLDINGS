@@ -22,7 +22,7 @@ const Admin = () => {
     const [isDelete, setDelete] = useState();
     const [isApprove, setApprove] = useState("");
     const [isDecline, setDecline] = useState("");
-    const [balance, setBalance] = useState(6056);
+    const [balance, setBalance] = useState(2,709);
     const [users, setUsers] = useState([]);
     const [show, setShow] = useState(false);
     const [bankR, setBankR] = useState([]);
