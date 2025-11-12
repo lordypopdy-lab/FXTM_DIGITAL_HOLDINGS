@@ -7,7 +7,7 @@ export default defineConfig({
   plugins: [react()],
   resolve: {
     alias: {
-      // Polyfills
+      // Polyfill Node globals for browser
       process: "process/browser",
       buffer: "buffer",
     },
