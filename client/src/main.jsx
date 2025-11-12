@@ -1,9 +1,14 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import App from './App.jsx'
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import App from "./App.jsx";
 
-createRoot(document.getElementById('root')).render(
+// TON Connect UI Provider
+import { TonConnectUIProvider } from "@tonconnect/ui-react";
+
+createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <App />
-  </StrictMode>,
-)
+    <TonConnectUIProvider manifestUrl="https://kapital-pluss.vercel.app/tonconnect-manifest.json">
+      <App />
+    </TonConnectUIProvider>
+  </StrictMode>
+);
