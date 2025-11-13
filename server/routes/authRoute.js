@@ -3,14 +3,14 @@ const router = express.Router();
 const cors = require("cors");
 
 const corsOptions = {
-    origin: 'https://kapital-pluss.vercel.app', 
+    origin: 'https://fxtm-digital-holdings.vercel.app', 
     credentials: true,
     methods: 'GET,POST,PUT,DELETE,OPTIONS',
     allowedHeaders: 'Content-Type,Authorization',
   };
 
   //http://localhost:5173
-  //https://kapital-pluss.vercel.app
+  //https://fxtm-digital-holdings.vercel.app
   
   router.use(cors(corsOptions));
   router.options('*', cors(corsOptions)); 
